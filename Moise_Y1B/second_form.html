@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM2</title>
+        <style>
+            html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: #606c76;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
+#submit
+{
+  background-color: #38353a;
+  border: 0.1rem solid #585658;
+  border-radius: .4rem;
+  color: #fff;
+  width:15rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 3.8rem;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 3.0rem;
+  text-align: center;
+}
+input{
+
+  border: 0.1rem solid #d1d1d1;
+  border-radius: .4rem;
+  height: 3.4rem;
+  padding: .8rem 2.0rem .7rem;
+  width: 50%;
+  display:block;    
+}
+textarea {
+  min-height: 6.5rem;
+  width:40rem;
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="second_form.php">
+            <fieldset>
+            <h3><U>Student management form</U></h3>
+            enter week of study:<input type="week" name="week" id="week"><br>
+            enter month of study:<input type="month" name="month" id="month"><br>
+            <!--<textarea>Enter lessons completed</textarea><br>-->
+            enter range:<input type="range" name="range" id="range"><br>
+            enter color you want:<input type="color" name="color" id="color"><br><br>
+            <textarea id="comments" name="comments" placeholder="write lessons you covered"></textarea><br>
+            <input type="submit" name="submit" id="submit" value="finish">
+        </fieldset>
+        </form>
+    </body>
+    </html>

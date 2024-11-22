@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Carnegie Mellon University</title>
+<style>
+                html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  color: #606c76;
+  font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  font-size: 1.6em;
+  font-weight: 300;
+  letter-spacing: .01em;
+  line-height: 1.6;
+}
+#submit
+{
+  background-color: #9b4dca;
+  border: 0.1rem solid #9b4dca;
+  border-radius: .4rem;
+  color: #fff;
+  width:15rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 3.8rem;
+  letter-spacing: .1rem;
+  line-height: 3.8rem;
+  padding: 0 3.0rem;
+  text-align: center;
+  display:block;
+}
+input{
+  background-color: transparent;
+  border: 0.1rem solid #d1d1d1;
+  border-radius: .4rem;
+  box-shadow: none;
+  box-sizing: inherit;
+  height: 3.2rem;
+  padding: .8rem 3.0rem .7rem;
+  width: 50%; 
+  display: block;  
+}
+#gender{
+  width: 20%;
+  display:inline-block;
+}
+#level{
+  width: 20%;
+  display:inline-block;
+}
+#clear{
+  width:10%;
+  background-color: rgb(107, 98, 98);
+}
+#submit-button{
+  width:10%;
+  background-color: rgb(78, 80, 78);
+}
+fieldset {
+  border-width: 0;
+  padding: 0;
+}
+</style>
+<link rel="shortcut icon" href="university favicon.png" type="image/x-icon">
+</head>
+<body>
+<section>
+<nav>
+<header>Twitter: Carnegie Mellon University</header>
+</nav>
+<div class="navtab">
+<a href="#">HOME</a>
+<a href="second_form.html">Form2</a>
+</div>
+</section>
+<hr>
+<h3><u>University Application Form</u></h3>
+<div class="form">
+<fieldset>
+<form method="post" action="submission.php">
+<label for="name">Name</label>
+<input type="text" name="name" id="name" placeholder="Names"><br>
+
+<label for="email">Email</label>
+<input type="email" name="email" id="email" placeholder="Email"><br>
+
+<label for="pass">Password</label>
+<input type="password" name="pass" id="pass" placeholder="Password"><br>
+
+<label for="count">Country</label>
+<input type="text" name="count" id="count" placeholder="Country"><br>
+
+<label for="marks">Average Marks</label>
+<input type="number" name="mrks" id="marks" placeholder="Average Marks"><br>
+
+<label for="tel">Telephone</label>
+<input type="tel" name="tel" id="tel" placeholder="Telephone"><br>
+
+<!-- <input type="color" name="clor" id="clor" placeholder="Favourite Color"><br> -->
+
+<label for="web">Favourite Website</label>
+<input type="url" id="web" name="web" placeholder="Favourite Website"><br>
+
+<label for="age">Age</label>
+<input type="number" name="age" id="age" placeholder="Age" min="18" max="20"><br>
+
+<div class="boxes">
+<label for="male">
+<input type="checkbox" id="gender" name="gender" value="male"> Male
+</label>
+<label for="female">
+<input type="checkbox" id="gender" name="gender" value="female"> Female
+</label><br>
+
+<label for="phd">
+<input type="radio" name="level" value="PhD" id="level"> PhD
+</label>
+<label for="masters">
+<input type="radio" name="level" value="Masters" id="level"> Masters
+</label>
+ </div>
+
+<label for="birth">Date of Birth</label>
+<input type="datetime-local" name="birth" id="birth" placeholder="Birthdate"><br>
+
+<label for="exam">Exam Submit</label>
+<input type="file" name="exam" id="exam" placeholder="Exam File" required><br>
+
+<input type="submit" id="submit-button" name="submit" value="Submit" >
+<input type="reset" id="clear" value="Clear">
+</form>
+</fieldset>
+</div>
+</body>
+</html>
